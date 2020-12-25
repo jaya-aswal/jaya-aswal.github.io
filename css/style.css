@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('../images/bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1186px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    color: rgba(240, 235, 235, 0.911);
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li:hover{
+    background-color: rgb(185, 185, 126);
+}
+
+.content{
+    width: 1180px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.button{
+    display:inline-flex;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none ;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn{
+    background-color: transparent;
+    color:violet;
+    margin-right: 15px;
+    border:1px solid violet;
+}
+.btn:hover{
+    background-color: yellow;
+}
+.bt{
+    background-color: transparent;
+    color:violet;
+    margin-right: 15px;
+    border:1px solid violet;
+}
+.bt:hover{
+    background-color: yellow;
+}
+.mobile-icon{display: none;}
+
+@media only screen and (max-width: 1180px){
+    .content{
+        width:100%;
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .mobile-icon{
+        display:inline-block;
+        color: white;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+    .main-nav{float:left;}
+    .main-nav li{
+        display: block;
+        margin-top: 4px;
+    }
+
+}
+@media only screen and (max-width: 480px){
+    .btn{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%}
+}

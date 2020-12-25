@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> jayadanceacademy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <header>
+     <nav>
+         <div class="row clearfix">
+             <img src="images/logo.png" class="logo">
+             <ul class="main-nav" id="check-class">
+                 <li>Home</li>
+                 <li>About</li>
+                 <li>Sign-in</li>
+                 <li>Gallery</li>
+
+             </ul>
+             <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+         </div>
+     </nav>
+     <div class="content">
+     <h1>“Dance is the hidden language <br>of the soul”</h1>
+     <a href="#" class="button btn">Dance courses</a>
+     <a href="#" class="button bt">Register yourself</a>
+     </div>
+ </header>
+</body>
+<script type="text/javascript">
+    function slideshow(){
+        var x=document.getElementById('check-class');
+        if(x.style.display==="none"){
+            x.style.display="block";
+        }else{
+            x.style.display="none";
+        }
+    }
+</script>
+</html>
